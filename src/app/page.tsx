@@ -4,9 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Home page</h1>
-
-      <Link href='/users'>GO TO USERS</Link>
+      <h1>Hello World!</h1>
     </main>
   );
 }
