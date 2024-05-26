@@ -16,7 +16,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav>
+          This applies for all routes under this folder route. 
+          Since this the is app folder level layout, this applies for the hole app.
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
