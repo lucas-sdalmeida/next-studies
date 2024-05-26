@@ -1,13 +1,12 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Hello world!</h1>
-      <br />
-      <Link href="/about">THIS IS A LINK FOR ABOUT</Link>
+      <h1>Home page</h1>
+
+      <Link href='/users'>GO TO USERS</Link>
     </main>
   );
 }
