@@ -11,18 +11,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <nav>
-          This applies for all routes under this folder route. 
-          Since this the is app folder level layout, this applies for the hole app.
-        </nav>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
